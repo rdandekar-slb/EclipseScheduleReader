@@ -27,6 +27,9 @@ class WELSPECS{
   enum WellSpecialInflowEquations{
     STD, NO, R_G, YES, P_P, GPP
   }
+  enum WellAutomaticShutIns{
+    SHUT, STOP
+  }
   public String WellName;
   public String Group;
   public int I;
@@ -35,7 +38,11 @@ class WELSPECS{
   public String PreferredPhase;
   public double DrainageRadius;
   public String SpecialInflowEquation;
-  public 
+  public String AutomaticShutIn;
+  public byte CrossFlowAbilityFlag;
+  
+
+
 }
 
 class WCONPROD{
